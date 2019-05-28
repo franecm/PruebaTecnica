@@ -41,29 +41,29 @@ namespace PruebaTecnica
             string lang = "&lang=es";
             string finalUri = uri + q + appid + units + lang;
 
-            Console.WriteLine("Llamada al servicio: " + finalUri);
+            //Console.WriteLine("Llamada al servicio: " + finalUri);
 
             try
             {
                 HttpClient client = new HttpClient();
                 //client.Timeout = TimeSpan.FromMilliseconds(System.Threading.Timeout.Infinite);
                 var response = await client.GetAsync(finalUri);
-                Console.WriteLine("## 1 ##");
+                //Console.WriteLine("## 1 ##");
                 /*  "weather": [{"description": "cielo claro"
                     "main": {"temp": 24.59,
                 */
                 if (response.IsSuccessStatusCode == true)
                 {
-                    Console.WriteLine("## 2 ##");
+                    //Console.WriteLine("## 2 ##");
                     var content = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine("## 3 ##");
-                    Console.WriteLine("## " + content.ToString());
+                    //Console.WriteLine("## 3 ##");
+                    //Console.WriteLine("## " + content.ToString());
 
                     var jsonData = JsonConvert.DeserializeObject<OpenWeahterApi>(content.ToString());
 
-                    Console.WriteLine("## 4 ##");
+                    //Console.WriteLine("## 4 ##");
                     List<Weather> w = jsonData.weather;
-                    Console.WriteLine("########## " + w.ToString());
+                    //Console.WriteLine("########## " + w.ToString());
 
                     Weather we = w[0];
                     Main m = jsonData.main;
@@ -79,7 +79,24 @@ namespace PruebaTecnica
 
                 } else if (response.IsSuccessStatusCode == false)
                 {
-                    Console.WriteLine("# ERROR STATUS CODE #");
+
+                    var contentError = await response.Content.ReadAsStringAsync();
+                    var jsonDataError = JsonConvert.DeserializeObject<OpenWeahterApi>(contentError.ToString());
+                    string statusCode = jsonDataError.cod.ToString();
+
+                    if (statusCode.Equals("404"))
+                    {
+                        Console.WriteLine("Error 404 ciudad no encontrada");
+
+                        await DisplayAlert("Alerta", "NO SE HA ENCONTRADO LA CIUDAD ESPECIFICADA, " + sCity + " EN EL PAIS " + sCountry, "Cerrar");
+                    }
+                    else
+                    {
+                        await DisplayAlert("Alerta", "Revise la ciudad y el país para mostrar el tiempo.", "Cerrar");
+                    }
+
+                    Console.WriteLine("# ERROR STATUS CODE # " + statusCode + " -- ");
+                    
                 }
 
             }  

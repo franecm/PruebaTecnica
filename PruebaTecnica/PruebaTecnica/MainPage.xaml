@@ -10,9 +10,9 @@
     <StackLayout>
         
         <Label Text="Introduzca los siguientes datos:" HorizontalOptions="Center" FontAttributes="Bold" />
-        <Entry x:Name="city" Placeholder="City"></Entry>
+        <Entry x:Name="city" Placeholder="Ciudad"></Entry>
 
-        <Picker x:Name="country" Title="Select a country">
+        <Picker x:Name="country" Title="Seleccione un país">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>España</x:String>
@@ -21,9 +21,9 @@
             </Picker.ItemsSource>
         </Picker>
 
-        <Button Text="Show the weather" Clicked="GetWeather"></Button>
+        <Button Text="Mostrar el tiempo" Clicked="GetWeather"></Button>
         
-        <Label x:Name ="lbWeather" Text="El tiempo en" />
+        <Label x:Name ="lbWeather" Text="" />
 
     </StackLayout>
 </ContentPage>
