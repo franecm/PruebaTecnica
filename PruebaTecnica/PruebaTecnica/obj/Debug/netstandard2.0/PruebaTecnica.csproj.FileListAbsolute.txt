@@ -1,0 +1,14 @@
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\bin\Debug\netstandard2.0\PruebaTecnica.deps.json
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\bin\Debug\netstandard2.0\PruebaTecnica.dll
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\PruebaTecnica.csprojAssemblyReference.cache
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\PruebaTecnica.csproj.CoreCompileInputs.cache
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\PruebaTecnica.AssemblyInfoInputs.cache
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\PruebaTecnica.AssemblyInfo.cs
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\bin\Debug\netstandard2.0\ref\PruebaTecnica.dll
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\bin\Debug\netstandard2.0\PruebaTecnica.pdb
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\PruebaTecnica.dll
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\ref\PruebaTecnica.dll
+C:\Users\Gallego\source\repos\PruebaTecnica\PruebaTecnica\PruebaTecnica\obj\Debug\netstandard2.0\PruebaTecnica.pdb

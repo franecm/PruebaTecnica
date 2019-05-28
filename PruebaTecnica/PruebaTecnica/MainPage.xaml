@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PruebaTecnica.MainPage">
+
+
+    <StackLayout>
+        
+        <Label Text="Introduzca los siguientes datos:" HorizontalOptions="Center" FontAttributes="Bold" />
+        <Entry x:Name="city" Placeholder="City"></Entry>
+
+        <Picker x:Name="country" Title="Select a country">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>España</x:String>
+                    <x:String>United Kingdom</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button Text="Show the weather" Clicked="GetWeather"></Button>
+        
+        <Label x:Name ="lbWeather" Text="El tiempo en" />
+
+    </StackLayout>
+</ContentPage>
